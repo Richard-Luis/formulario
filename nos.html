@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem somos nós ?</title>
+
+    <script src="https://kit.fontawesome.com/6547a7e440.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <img class="logo" src="imagens/logo-navbar.png" alt="">
+  
+
+  <div class="nav-item">
+    <li class="nav-links"><a href="nos.html">Sobre</a></li>
+    <li class="nav-links"><a href="apresentacoes.html">Apresentações</a></li>
+    <li class="nav-links"><a href="fotos.html">Fotos</a></li>
+    <li class="nav-links"><a href="videos.html">Videos</a></li>
+  </div>
+
+
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="">Sobre</a>
+      <a href="">Apresentações</a>
+      <a href="">Fotos</a>
+      <a href="">Videos</a>
+    </div>
+  </div>
+  <button class="nav-button" onclick="openNav()">
+    <i class="fa-solid fa-bars fa-2x"></i>
+  </button>
+</nav>
+
+      <main>
+
+      <div>
+      <h1 class="h1nos">Quem somos nós ?</h1>
+    </div>
+
+    <div class="divimgnos">
+
+        <picture>
+            <source media="(max-width: 601px)" srcset="imagens/grupo-todo-p.png">
+
+            <source media="(max-width: 1050px)" srcset="imagens/grupo-todo-m.png">
+
+        <img class="imgnos" src="imagens/grupo-todo1.png" alt="">
+    </picture>
+    </div>
+
+    <div>
+        <p class="pnos">
+            O Grupo de dança <strong class="strongnos">CaldoShow</strong> é onde você pode se soltar e se divetir, dar risadas, você será bem-vindo independente de qualquer coisa, aqui exigimos máximo respeito com todos.
+        </p>
+        <p class="pnos">
+            Damos aulas de pagode e te ensinamos a <strong class="strongnos">dançar</strong> do Zero ao avançado.
+        </p>
+    </div>
+
+    </main>
+  
+      <script src="js/menu.js"></script>
+    
+</body>
+</html>
