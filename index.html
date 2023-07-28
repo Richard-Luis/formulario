@@ -1,84 +1,93 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CaldoShow</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="https://kit.fontawesome.com/6547a7e440.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css" />
-    <script src="js/menu.js"></script>
-
-  </head>
-  <body>
-
-        <nav>
-            <img class="logo" src="imagens/logo-navbar.png" alt="">
-          
-
-          <div class="nav-item">
-            <li class="nav-links"><a href="nos.html">Sobre</a></li>
-            <li class="nav-links"><a href="apresentacoes.html">Apresentações</a></li>
-            <li class="nav-links"><a href="fotos.html">Fotos</a></li>
-            <li class="nav-links"><a href="videos.html">Videos</a></li>
-          </div>
-
-
-          <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-              <a href="">Sobre</a>
-              <a href="">Apresentações</a>
-              <a href="">Fotos</a>
-              <a href="">Videos</a>
-            </div>
-          </div>
-          <button class="nav-button" onclick="openNav()">
-            <i class="fa-solid fa-bars fa-2x"></i>
-          </button>
-        </nav>
     
+   <link rel="stylesheet" href="style.css">
+    
+    <title>Login Dark/Light Mode</title>
+</head>
+<body>   
+    <main id="container">
+        <form id="login_form">
+            <!-- FORM HEADER -->
+            <div id="form_header">
+                <h1>Login</h1>
+                <i id="mode_icon" class="fa-solid fa-moon"></i>
+            </div>
 
-      <div class="slider">
-        <div class="slider-content">
+            <!-- SOCIAL MEDIA LINKS -->
+            <div id="social_media">
+                <!-- FACEBOOK -->
+                <a href="#">
+                    <img src="imagens/icons8-facebook-48.png" alt="">
+                </a>
 
-          <input type="radio" name="btn-radio" id="radio1">
-          <input type="radio" name="btn-radio" id="radio2">
-          <input type="radio" name="btn-radio" id="radio3">
+                <!-- GOOGLE -->
+                <a href="#">
+                    <img src="imagens/icons8-google-logo-48.png" alt="Google logo">
+                </a>
+                
+                <!-- GITHUB -->
+                <a href="#">
+                    <img src="imagens/icons8-github-50.png" alt="">
+                </a>
+            </div>
 
+            <!-- INPUTS -->
+            <div id="inputs">
+                <!-- NAME -->
+                <div class="input-box">
+                    <label for="name">
+                        Name
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="name" name="name">
+                        </div>
+                    </label>
+                </div>
+                
+                <!-- EMAIL -->
+                <div class="input-box">
+                    <label for="email">
+                        E-mail
+                        <div class="input-field">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" id="email" name="email">
+                        </div>
+                    </label>
+                </div>
+                
+                <!-- PASSWORD -->
+                <div class="input-box">
+                    <label for="password">
+                        Password
+                        <div class="input-field">
+                            <i class="fa-solid fa-key"></i>
+                            <input type="password" id="password" name="password">
+                        </div>
+                    </label>
+                    
+                    <!-- FORGOT PASSWORD -->
+                    <div id="forgot_password">
+                        <a href="#">
+                            Forgot your password?
+                        </a>
+                    </div>
+                </div>
+            </div>
 
+            <!-- LOGIN BUTTON -->
+            <button type="submit" id="login_button">
+                Login
+            </button>
+        </form>
+    </main>
 
-          <div class="slide-img primeiro">
-            <img class="img-desktop" src="imagens/front1.jpg" alt="">
-            <img class="img-mobile" src="imagens/front1-mobile.png" alt="">
-          </div>
-
-          <div class="slide-img">
-            <img class="img-desktop" src="imagens/front2.jpg" alt="">
-            <img class="img-mobile" src="imagens/front2-mobile.png" alt="">
-          </div>
-
-          <div class="slide-img">
-            <img class="img-desktop" src="imagens/front3.jpeg" alt="">
-            <img class="img-mobile" src="imagens/front3-mobile.png" alt="">
-          </div>
-
-        </div>
-      </div>
-
-      <div class="nav-auto">
-        <div class="auto-btn1"></div>
-        <div class="auto-btn2"></div>
-        <div class="auto-btn3"></div>
-    </div>
-
-    <div class="nav-manual">
-        <label for="radio1" class="manual-btn"></label>
-        <label for="radio2" class="manual-btn"></label>
-        <label for="radio3" class="manual-btn"></label>
-    </div>
-
-
-  </body>
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript" src="js/form.js"></script>
+</body>
 </html>
